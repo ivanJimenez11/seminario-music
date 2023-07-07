@@ -3,18 +3,12 @@
 </ion-header>
 
 <ion-content>
-  <swiper-container [initialSlide]="1" [slidesPerView]="2">
-    <swiper-slide>
-        <h1>Titulo Principal</h1>
-        <img src="assets/img/jsonImg.jpg">
-        <ion-icon class="slide-icon" name="battery-charging-outline"></ion-icon>
-        <p> Hola soy la explicacion del slide, Hola soy la explicacion del slide </p>
+  <swiper-container [initialSlide]="0" class="slideStyle">
+    <swiper-slide *ngFor="let item of slides; let i = index">
+        <h1 class="slide-titles" [style.color]="colors[i]">{{item.title}}</h1>
+        <img [src]="item.img">
+        <p> {{item.p}} </p>
+        <ion-icon class="slide-icon" [style.color]="colors[i]" [name]="item.icon"></ion-icon>
     </swiper-slide>
-
-    <swiper-slide>
-      <h1>Titulo Secundario</h1>
-      <ion-icon name="battery-charging-outline"></ion-icon>
-        <p> Hola soy la explicacion del slide, Hola soy la explicacion del slide </p>
-  </swiper-slide>
   </swiper-container>
 </ion-content>
