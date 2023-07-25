@@ -34,8 +34,8 @@
 
     <h1>Top Artistas Mundiales</h1>
     <swiper-container [initialSlide]="0" class="slideStyle">
-      <swiper-slide *ngFor="let artist of artists"  style="height: 250px;">
-          <img src="{{artist.image}}" style="width: 100%;">
+      <swiper-slide *ngFor="let artist of localArtists"  style="height: 250px;">
+          <img src="{{artist.images[0].url}}" style="width: 100%;">
           <p> {{artist.name}} </p>
       </swiper-slide>
     </swiper-container>
