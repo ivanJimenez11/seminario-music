@@ -1,0 +1,37 @@
+.contentForm{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 25px;
+    background: var(--background-gradient);
+    .iconMusic{
+        font-size: 70px;
+    }
+    form{
+        width: 100%;
+    }
+}
+
+.containerLogin{
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-toolbar{
+    --background: transparent;
+}
+
+ion-content{
+    --background: transparent;
+    text-align: center;
+}
+
+
+::ng-deep .item-native{
+    background: transparent;
+}

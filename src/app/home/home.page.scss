@@ -1,0 +1,34 @@
+ion-avatar{
+    height: 100px;
+    width: 100px;
+}
+
+swiper-slide {
+    height: 120px;
+}
+
+h1{
+    font-size: var(--fontSizeTitel);
+    // color: var(--colorDetail);
+}
+
+.containerAll{
+    height: 80%;
+    background: var(--background-gradient);
+}
+
+.album-style {
+    --border-radius: 4px;
+}
+
+ion-toolbar{
+    --background: transparent;
+    color: black;
+    ion-menu-button{
+        color: white;
+    }
+}
+
+ion-content{
+    --background: transparent;
+}

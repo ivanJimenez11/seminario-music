@@ -1,8 +1,12 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+
 /** Ionic CSS Variables **/
 :root {
+  --background-gradient: linear-gradient(90deg, rgba(87,13,122,1) 0%, rgba(82,11,134,1) 35%, rgba(181,0,255,1) 100%); 
+  --fontSizeTitel: 25px;
+  --colorDetail: black;
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
